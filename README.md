@@ -99,3 +99,7 @@ Use [this repo](https://github.com/BASFProject-2018spring/faster-RCNN-cpu) inste
 ## GUI, auto-updates, CSV export, R^2 calculations...
 
 This is just for the convenience of clients so they don't need to write additional code to process the inference txts. Documents are [here](https://github.com/BASFProject-2018spring/GUI).
+
+# License
+
+Unless mentioned, all modules for this project are under **GNU GPL v3** license.
