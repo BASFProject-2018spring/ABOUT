@@ -88,6 +88,8 @@ python run.py --net NET
 
 (NET can be either vgg16, res101 or res152)
 
+In `$HOME/imgwork/output`, you will see all annotated images and the detailed boxes as txt files (box coordinates, classifications and confidences). If you can code, you may want to process those txt files by your own (very simple). Or you may try our GUI (details later)...
+
 ## Test on CPU
 
 You need **Python 2.7**
@@ -96,4 +98,4 @@ Use [this repo](https://github.com/BASFProject-2018spring/faster-RCNN-cpu) inste
 
 ## GUI, auto-updates, CSV export, R^2 calculations...
 
-This is really just for the convenience of clients. Documents are [here](https://github.com/BASFProject-2018spring/GUI).
+This is just for the convenience of clients so they don't need to write additional code to process the inference txts. Documents are [here](https://github.com/BASFProject-2018spring/GUI).
