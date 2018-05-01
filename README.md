@@ -100,7 +100,7 @@ Use [this repo](https://github.com/BASFProject-2018spring/faster-RCNN-cpu) inste
 
 ## Rescalling Images (Optional)
 
-If you have test images not with the same scale as the training images (higher resolution), before feeding them to the network for prediction, you should rescale the images to the same scale. **Note: in this case, our network will have worse performance.**
+If you have test images not with the same scale as the training images (higher magnification), before feeding them to the network for prediction, you should rescale the images to the same scale. **Note: in this case, our network will have worse performance.**
 
 We wrote a script for such rescalling. Suppose you put all images in the `old_img` folder and want the rescaled images to be in the `new_img` folder, with rescale factor 0.5 (note: only scalling down (making image smaller) supported, i.e. factor <1.0). You should download [the script](https://github.com/BASFProject-2018spring/VOC_format_builder/blob/master/image_rescale.py) and run:
 
