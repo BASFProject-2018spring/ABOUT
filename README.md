@@ -12,6 +12,8 @@ Use [BBox-Label-Tool-large-img](https://github.com/BASFProject-2018spring/BBox-L
 
 This tool will produce a `Labels` folder containing all label txts with same relative paths as original bmp images. Now you should have `Images` and `Labels` folder with corresponding images and labels.
 
+For details, follow the readme [here](https://github.com/BASFProject-2018spring/BBox-Label-Tool-large-img)
+
 ## Data cleaning
 
 There will be multiple subfolders in both `Images` and `Labels`. Use the [preprocess script](https://github.com/BASFProject-2018spring/VOC_format_builder/blob/master/preprocess_imgs_rcnn.py) to get all images under a single directory and rename them into `NUMBER.jpg` (convert to `.jpg`). The command is:
