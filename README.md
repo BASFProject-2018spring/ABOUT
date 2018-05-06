@@ -123,6 +123,16 @@ python image_rescale.py --input old_img --output new_img --scale 0.5
 
 This is just for the convenience of clients so they don't need to write additional code to process the inference txts. Documents are [here](https://github.com/BASFProject-2018spring/GUI).
 
+
+## What if you want to have more classes
+
+If you want the model working for more than 2 classes, edit the following part of our code:
++ Labeling tool: Add classes in [class.txt](https://github.com/BASFProject-2018spring/BBox-Label-Tool-large-img/blob/master/class.txt).
++ VOC builder and preprocessing: No change required. 
++ Model: In both CPU and GPU versions, add classes in [pascal_voc.py](https://github.com/BASFProject-2018spring/faster-RCNN-gpu/blob/master/lib/datasets/pascal_voc.py#L35)
++ Inference: In both CPU and GPU versions, add classes in [run.py](https://github.com/BASFProject-2018spring/faster-RCNN-gpu/blob/master/tools/run.py#L42) and add color encodings for new classes.
++ Evaluation: Confusion matrix generator [evaluation.py](https://github.com/BASFProject-2018spring/ABOUT/blob/master/evaluation.py) needs to be re-written.
+
 # License
 
 Unless mentioned, all modules for this project are under **GNU GPL v3** license.
