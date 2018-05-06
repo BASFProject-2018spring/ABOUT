@@ -98,6 +98,16 @@ You need **Python 2.7**
 
 Use [this repo](https://github.com/BASFProject-2018spring/faster-RCNN-cpu) instead. You'll see `tools/run.py` as well but it uses CPU.
 
+## Generate Prediction Confusion Matrix
+
+You can use [evaluation.py](https://github.com/BASFProject-2018spring/ABOUT/blob/master/evaluation.py) in this repo to generate confusion matrix for prediction quality. This script is written in Python 3. Suppose your prediction boxes folder is `Pred` and you have ground truth boxes `Label` (labeled using bbox-tool), simply run command in terminal:
+
+```bash
+python evaluation.py Label Pred
+```
+
+In the termial, you will see confusion matrix for both detection and classification, also AUC, F1 and accuracy statistics.
+
 ## Rescalling Images (Optional)
 
 If you have test images not with the same scale as the training images (higher magnification), before feeding them to the network for prediction, you should rescale the images to the same scale. **Note: in this case, our network will have worse performance.**
