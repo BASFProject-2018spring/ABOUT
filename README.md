@@ -69,7 +69,7 @@ The data setup is:
 ```bash
 git clone https://github.com/BASFProject-2018spring/faster-RCNN-gpu.git
 cd faster-RCNN-gpu/data
-ln -sf X/VOC2007 VOCdevkit2007
+ln -sf X VOCdevkit2007 (X is the path of the parent folder of VOC2007. i.e. you have X/VOC2007)
 ```
 
 Next follow the instructions in [this repo](https://github.com/BASFProject-2018spring/faster-RCNN-gpu). We only kept training scripts from original Faster-RCNN implementation in this repository.
