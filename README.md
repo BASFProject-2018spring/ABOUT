@@ -108,6 +108,8 @@ python evaluation.py Label Pred
 
 In the termial, you will see confusion matrix for both detection and classification, also AUC, F1 and accuracy statistics.
 
+![terminal](https://user-images.githubusercontent.com/4648756/39777346-5572468e-52d1-11e8-8194-a43119749b85.PNG)
+
 ## Rescalling Images (Optional)
 
 If you have test images not with the same scale as the training images (higher magnification), before feeding them to the network for prediction, you should rescale the images to the same scale. **Note: in this case, our network will have worse performance.**
